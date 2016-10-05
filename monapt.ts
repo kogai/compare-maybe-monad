@@ -1,3 +1,4 @@
+import { equal } from "assert";
 import { Option, None } from "monapt";
 
 interface InnerFoo {
@@ -13,7 +14,8 @@ const foo: OuterFoo = { bar: innerFoo };
 
 // 値を直接取り出す
 const buzz1: number = foo.bar
-  .getOrElse(() => ({ buzz: -1 })).buzz;
+  .getOrElse(() => ({ buzz: -1 }))
+  .buzz;
 
 // パターンマッチ風の値取り出し
 const buzz2 = foo.bar
@@ -22,4 +24,6 @@ const buzz2 = foo.bar
     None: () => -1,
   });
 
+equal(buzz1, -1);
+equal(buzz2, -1);
 console.log(buzz1, buzz2);

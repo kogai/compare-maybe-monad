@@ -1,5 +1,6 @@
 /// <reference path="./node_modules/tsmonad/dist/tsmonad.d.ts" />
-import { Maybe, Either } from "tsmonad";
+import { equal } from "assert";
+import { Maybe } from "tsmonad";
 
 interface InnerFoo {
   buzz: number;
@@ -14,7 +15,8 @@ const foo: OuterFoo = { bar: innerFoo };
 
 // 値を直接取り出す
 const buzz1 = foo.bar
-  .valueOr({ buzz: -1 }).buzz;
+  .valueOr({ buzz: -1 })
+  .buzz;
 
 // パターンマッチ風の値取り出し
 const buzz2: number = foo.bar
@@ -23,4 +25,6 @@ const buzz2: number = foo.bar
     nothing: () => -1,
   });
 
+equal(buzz1, -1);
+equal(buzz2, -1);
 console.log(buzz1, buzz2);

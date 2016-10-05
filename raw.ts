@@ -1,3 +1,5 @@
+import { equal } from "assert";
+
 interface InnerFoo {
   buzz: number;
 }
@@ -9,5 +11,7 @@ interface OuterFoo {
 const innerFoo = null;
 const foo: OuterFoo = { bar: innerFoo };
 
-const buzz: number = foo.bar ? foo.bar.buzz : -1;
-console.log(buzz);
+const buzz1: number = foo.bar ? foo.bar.buzz : -1;
+
+equal(buzz1, -1);
+console.log(buzz1);
