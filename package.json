@@ -1,0 +1,17 @@
+{
+  "name": "compare-maybe-monad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "$(npm bin)/tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "monapt": "^0.6.0",
+    "tsmonad": "^0.6.1",
+    "typescript": "^2.0.3"
+  }
+}
