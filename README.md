@@ -1,5 +1,7 @@
 # compare-maybe-monad
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/kogai/compare-maybe-monad.svg)](https://greenkeeper.io/)
+
 MaybeモナドのTypeScript実装比較まとめ
 
 ## 生のTypeScript
