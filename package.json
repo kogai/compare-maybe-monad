@@ -16,7 +16,7 @@
     "monadness": "^0.5.1",
     "monapt": "^0.7.1",
     "ts-node": "^3.0.2",
-    "tsmonad": "^0.6.1",
+    "tsmonad": "^0.7.0",
     "typescript": "^2.0.3"
   }
 }
