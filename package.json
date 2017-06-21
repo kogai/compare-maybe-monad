@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^7.0.7",
+    "@types/node": "^8.0.1",
     "fantasy-options": "0.0.1",
     "monadness": "^0.5.1",
     "monapt": "^0.7.1",
