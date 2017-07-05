@@ -14,7 +14,7 @@
     "@types/node": "^8.0.1",
     "fantasy-options": "0.0.1",
     "monadness": "^0.5.1",
-    "monapt": "^0.7.1",
+    "monapt": "^1.0.4",
     "ts-node": "^3.0.2",
     "tsmonad": "^0.7.0",
     "typescript": "^2.0.3"
